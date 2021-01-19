@@ -49,7 +49,6 @@ nbr_scales=279
 scales=np.exp(np.linspace(np.log(1.51),np.log(622.207),nbr_scales))
 cwtmatr, freqs = pywt.cwt(signal,scales,'cmor2.0-1.0')
 
-
 penalty=2.0
 # CWT example
 Energy,ridge_idx,_ = rt.extract_fridges(cwtmatr,scales,penalty,num_ridges=2,BW=25)
@@ -74,7 +73,7 @@ Energy,ridge_idx,_ = rt.extract_fridges(cwtmatr,scales,penalty,num_ridges=2,BW=2
 plt.figure()
 visualize(sign_chirp, cwtmatr, ridge_idx)
 
-# Example 3: Two sweep signals where respective frequency variations are described with polynomials
+#### Example 3: One sweep signal and one constant frequency signal
 
 
 p1 = np.poly1d([0.025, -0.36, 1.25, 2.0])
