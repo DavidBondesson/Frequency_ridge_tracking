@@ -93,4 +93,4 @@ visualize(sweep_sig, cwtmatr, ridge_idx)
 ```
 
 ![signal_3](/imgs/signal_1.png)
-![cwt_ridge_signal_1](/imgs/cwt_signal_3_ridge.png)
+![cwt_ridge_signal_3](/imgs/cwt_signal_3_ridge.png)
